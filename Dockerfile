@@ -17,6 +17,7 @@ RUN wget -q https://s3.amazonaws.com/Minecraft.Download/versions/1.8.7/minecraft
 
 # Sets working directory for the CMD instruction (also works for RUN, ENTRYPOINT commands)
 # Create mount point, and mark it as holding externally mounted volume
+RUN mkdir /data
 WORKDIR /data
 VOLUME /data
 
